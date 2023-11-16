@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1320px;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+.banner,
+.nosotros-contenedor,
+.galeria,
+.formulario-contenedor,
+.footer-contenedor {
+    width: 100%;
+    box-sizing: border-box;
+}
+  
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.logo img {
+    max-height: 40px;
+}
+  
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.menu li {
+    margin-right: 20px;
+}
+  
+.menu li:last-child {
+    margin-right: 0;
+}
+  
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+  
+  .menu a:hover {
+    color: #ddd;
+}
+#cta-container {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+#cta-button {
+    display: inline-flex;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    background-color: #8b1f1f;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#cta-button:hover {
+    background-color: #8b1f1f;
+}
+.banner {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    z-index: 1; 
+}
+
+.texto-bajo-banner {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+.texto-bajo-banner p {
+    margin: 10px 0;
+    font-size: 16px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+.texto-bajo-banner p:first-child {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+.texto-bajo-banner p:last-child {
+  font-family: 'Roboto', sans-serif;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.productos {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+    position: relative;
+}
+
+.productos img {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.productos h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0; 
+    margin: 0;
+}
+
+.precio {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    color: #8b1f1f;
+    font-weight: bold;
+    margin: 0;
+    font-size: 30px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px; 
+    font-weight: bold; 
+    text-align: center;
+    padding: 20px;
+}
+.nosotros-contenedor {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 40px auto 40px;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.nosotros-texto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20;
+}
+
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 60px auto 60px;
+}
+
+.galeria img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+    border: 5px solid #ad3b3b;
+    border-radius: 10px;
+}
+
+.formulario-contenedor {
+    background-color: #cfc5b2;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin: 20px auto;
+    max-width:400px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.formulario-contenedor h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.formulario-contenedor form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #8b1f1f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8b1f1f;
+}
+
+
+footer {
+    background-color: #000;
+    color: white;
+    padding: 20px 0; 
+}
+.footer-contenedor {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociales {
+    display: flex;
+}
+
+.redes-sociales a {
+    margin-right: 15px;
+}
+
+.redes-sociales img {
+    width: 30px; 
+    height: 30px;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 14px;
+}
